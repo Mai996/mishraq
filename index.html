@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مِشراق | MISHRAQ</title>
+  <meta name="description" content="منصة لتقييم إمكانات الطاقة الشمسية على أسطح المباني في سلطنة عُمان.">
+  <link rel="icon" href="assets/logo.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@geoman-io/leaflet-geoman-free@2.17.0/dist/leaflet-geoman.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#/">
+      <img src="assets/logo.jpeg" alt="" width="36" height="36">
+      <span><strong>مِشراق</strong><small>MISHRAQ</small></span>
+    </a>
+    <nav class="nav" aria-label="التنقل الرئيسي">
+      <a href="#/studio" data-route="studio">الخريطة والتحليل</a>
+      <a href="#/dashboard" data-route="dashboard">لوحة المعلومات</a>
+      <a href="#/method" data-route="method">المنهجية</a>
+    </nav>
+    <div class="account" id="account"></div>
+  </header>
+  <main id="view"></main>
+  <div id="toasts" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@geoman-io/leaflet-geoman-free@2.17.0/dist/leaflet-geoman.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@turf/turf@7.1.0/turf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
